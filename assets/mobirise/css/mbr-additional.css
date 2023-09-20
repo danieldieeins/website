@@ -1312,7 +1312,7 @@ a {
   width: 3.5rem;
 }
 .cid-tQo5Plf7IA .number-wrap {
-  color: #f32727;
+  color: #f54b4b;
   text-align: center;
 }
 .cid-tQo5Plf7IA .number {
@@ -1368,4 +1368,10 @@ a {
 .cid-tQo5Plf7IA .mbr-text,
 .cid-tQo5Plf7IA .mbr-section-btn {
   color: #edefeb;
+}
+.cid-tQo9xQwv0L {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000000;
+  overflow: hidden;
 }
