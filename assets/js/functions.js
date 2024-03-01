@@ -48,16 +48,16 @@ function checkURL() {
             open_("sub/start.html");
         } else if(s === "lawstuff") {
             document.title = "b.nerotv.live (lawstuff)"
-            open_("sub/lawstuff.html");
+            link("https://a.nerotv.live?s=lawstuff");
         } else if(s==="privacy") {
             document.title = "b.nerotv.live (lawstuff)"
-            open_("sub/lawstuff.html");
+            link("https://a.nerotv.live?s=lawstuff");
         } else if(s==="imprint") {
             document.title = "b.nerotv.live (lawstuff)"
-            open_("sub/lawstuff.html");
+            link("https://a.nerotv.live?s=lawstuff");
         } else if(s === "discord") {
             document.title = "b.nerotv.live (discord)"
-            open_("sub/discord.html");
+            open_("https://a.nerotv.live?s=discord");
         } else {
             document.title = "b.nerotv.live (404)"
             open_("sub/e404.html");
