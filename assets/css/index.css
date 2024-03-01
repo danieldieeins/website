@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI Regular Local', Tahoma, Geneva, Verdana, sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular Local';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../segoeui/Segoe UI.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('../segoeui/Segoe UI Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../segoeui/Segoe UI Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('../segoeui/Segoe UI Bold Italic.woff') format('woff');
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    overflow: hidden;
+    background: #0d0d0d;
+}
+
+#head-menu {
+    user-select: none;
+    width: 100%;
+    background: black;
+    color: #fff;
+    height: 4rem;
+    box-shadow: 0 0 0.8rem #000;
+}
+
+#head-menu i#toggle {
+    position: absolute;
+    font-size: 2.5rem;
+    right: 1rem;
+    top: 0.775rem;
+    display: inherit;
+}
+
+#head-menu.active {
+    position: absolute;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 18.75rem;
+    height: 4rem;
+    display: inherit;
+}
+
+#head-menu.active i#toggle {
+    display: none;
+}
+
+#head-menu .title {
+    position: relative;
+    display: flex;
+}
+
+#head-menu .title img {
+    padding: 0.75rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+#head-menu .title h1 {
+    position: absolute;
+    left: 4.5rem;
+    top: -0.6rem;
+}
+
+#head-menu #sub-menu {
+    display: none;
+}
+
+#head-menu.active #sub-menu.active {
+    position: relative;
+    width: calc(100% - 2rem);
+}
+
+#head-menu #sub-menu.active {
+    position: absolute;
+    right: 0;
+
+    display: inherit;
+    height: calc(100vh - 4rem);
+    width: 17.05rem;
+
+    background: #0d0d0d;
+    box-shadow: 0 0 0.8rem #000;
+    overflow-y: auto;
+}
+
+#head-menu #sub-menu.active ul {
+    padding-bottom: 10rem;
+}
+
+#head-menu.active #sub-menu.active ul {
+    padding-bottom: 1rem;
+}
+
+#head-menu #sub-menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#head-menu #sub-menu ul li {
+    padding: 1rem 1rem 0 1rem;
+}
+
+#head-menu #sub-menu ul li .menu-item {
+    position: relative;
+    padding: 1.25rem;
+    background: black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.8rem black;
+}
+
+#head-menu #sub-menu ul li .menu-item span {
+    position: absolute;
+    left: 2.75rem;
+    top: 0.45rem;
+    font-size: 1.1rem;
+}
+
+#head-menu #sub-menu ul li .menu-item i {
+    position: absolute;
+    left: 0.55rem;
+    top: 0.535rem;
+    font-size: 1.5rem;
+}
+
+#head-menu #sub-menu ul li h3 {
+    font-weight: 500;
+    color: #ffffff70;
+}
+
+@-moz-document url-prefix() {
+    #head-menu #sub-menu ul li {
+        padding: 0 1rem 0 1rem;
+    }
+
+    #head-menu #sub-menu ul li h3 {
+        padding-top: 1rem;
+    }
+}
+
+#head-menu #sub-menu ul li .menu-item:hover {
+    background: linear-gradient(to bottom right, white, #f0cbff);
+    box-shadow: 0 0 0.8rem white;
+    color: black;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#head-menu #sub-menu ul li .menu-item#twitch:hover {
+    background: linear-gradient(to bottom right, rebeccapurple, mediumpurple);
+    box-shadow: 0 0 0.8rem rebeccapurple;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#youtube:hover {
+    background: linear-gradient(to bottom right, red, darkred);
+    box-shadow: 0 0 0.8rem red;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#youtube2:hover {
+    background: linear-gradient(to bottom right, indianred, #d93131);
+    box-shadow: 0 0 0.8rem indianred;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#youtube3:hover {
+    background: linear-gradient(to bottom right, mediumpurple, indianred);
+    box-shadow: 0 0 0.8rem #692c5e;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#discord:hover {
+    background: linear-gradient(to bottom right, mediumpurple, #5865F2);
+    box-shadow: 0 0 0.8rem #5865F2;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#bluesky:hover {
+    background: linear-gradient(to bottom right, cornflowerblue, #0884fc);
+    box-shadow: 0 0 0.8rem #0884fc;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#x:hover {
+    background: linear-gradient(to bottom right, white, #8d8d8d);
+    box-shadow: 0 0 0.8rem white;
+    color: black;
+}
+
+#head-menu #sub-menu ul li .menu-item#instagram:hover {
+    background: linear-gradient(to bottom right, #833AB4,#E1306C,#FFDC80);
+    box-shadow: 0 0 0.8rem #E1306C;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#reddit:hover {
+    background: linear-gradient(to bottom right, orange, orangered);
+    box-shadow: 0 0 0.8rem orange;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#threads:hover {
+    background: linear-gradient(to bottom right,#E1306C,#F56040,#FCAF45);
+    box-shadow: 0 0 0.8rem #F56040;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#creator:hover {
+    background: linear-gradient(to bottom right, white, rgba(137, 255, 219, 0.83));
+    box-shadow: 0 0 0.8rem white;
+    color: black;
+}
+
+#head-menu #sub-menu ul li .menu-item#patreon:hover {
+    background: linear-gradient(to bottom right, #ffffb2, #ff9166);
+    box-shadow: 0 0 0.8rem #ffffb2;
+    color: black;
+}
+
+#head-menu #sub-menu ul li .menu-item#spotify:hover {
+    background: linear-gradient(to bottom right, #7df86f, #1DB954);
+    box-shadow: 0 0 0.8rem #1DB954;
+    color: black;
+}
+
+#head-menu #sub-menu ul li .menu-item#zyneon:hover {
+    background: linear-gradient(to bottom right, rebeccapurple, purple);
+    box-shadow: 0 0 0.8rem rebeccapurple;
+    color: white;
+}
+
+#head-menu #sub-menu ul li .menu-item#tipeee:hover {
+    background: linear-gradient(to bottom right, palegoldenrod, #ffdc2d);
+    box-shadow: 0 0 0.8rem #ffdc2d;
+    color: black;
+}
+
+#content {
+    height: calc(100vh - 4rem);
+    width: 100%;
+    border-style: none;
+    background: #1f1f1f;
+}
+
+#content.active {
+    width: calc(100% - 16.7rem);
+    position: fixed;
+    z-index: -1;
+    left: 16.75rem;
+    top: 0;
+    height: 100vh;
+}
