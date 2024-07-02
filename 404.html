@@ -8,9 +8,9 @@
         function getBrowserLanguage() {
             const browserLanguage = navigator.language || navigator.userLanguage;
             if(browserLanguage.toLowerCase().startsWith("de")) {
-                window.location.href = "de/404"
+                window.location.href = "de/?s=404"
             } else {
-                window.location.href = "en/404"
+                window.location.href = "en/?s=404"
             }
         }
         window.onload = getBrowserLanguage;
