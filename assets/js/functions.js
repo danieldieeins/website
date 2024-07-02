@@ -40,7 +40,7 @@ function deactivateMenu() {
 }
 
 function checkURL() {
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(location.search);
     if(urlParams.get("r")!=null) {
         location.href = "https://nerotv.live/"+urlParams.get("r");
         return;
@@ -48,22 +48,34 @@ function checkURL() {
     if(urlParams.get("s")!=null) {
         const s = urlParams.get('s');
         if(s === "start"||s === "home") {
-            document.title = "b.nerotv.live (start)"
+            document.title = "a.nerotv.live (start)"
             open_("sub/start.html");
-        } else if(s === "lawstuff") {
-            document.title = "b.nerotv.live (lawstuff)"
-            link("https://a.nerotv.live?s=lawstuff");
-        } else if(s==="privacy") {
-            document.title = "b.nerotv.live (lawstuff)"
-            link("https://a.nerotv.live?s=lawstuff");
-        } else if(s==="imprint") {
-            document.title = "b.nerotv.live (lawstuff)"
-            link("https://a.nerotv.live?s=lawstuff");
+        } else if(s === "lawstuff"||s==="rechtliches") {
+            document.title = "a.nerotv.live (impressum & datenschutzerklärung)"
+            open_("sub/lawstuff.html");
+        } else if(s==="datenschutzerklärung") {
+            document.title = "a.nerotv.live (impressum & datenschutzerklärung)"
+            open_("sub/lawstuff.html#datenschutzerklärung");
+        } else if(s==="impressum") {
+            document.title = "a.nerotv.live (impressum & datenschutzerklärung)"
+            open_("sub/lawstuff.html");
         } else if(s === "discord") {
-            document.title = "b.nerotv.live (discord)"
-            open_("https://a.nerotv.live?s=discord");
+            document.title = "a.nerotv.live (discord)"
+            open_("sub/discord.html");
+        } else if(s === "creator") {
+            document.title = "a.nerotv.live (andere creator)"
+            open_("sub/creator.html");
+        } else if(s === "zyneon") {
+            document.title = "a.nerotv.live (zyneon)"
+            open_("sub/zyneon.html");
+        } else if(s === "zyneonweb") {
+            document.title = "a.nerotv.live (zyneon website)"
+            open_("https://zyneonstudios.com");
+        } else if(s === "zyneonapp") {
+            document.title = "a.nerotv.live (zyneon web app)"
+            open_("https://danieldieeins.github.io/Zyneon-Application/");
         } else {
-            document.title = "b.nerotv.live (404)"
+            document.title = "a.nerotv.live (404)"
             open_("sub/e404.html");
         }
     }

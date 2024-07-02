@@ -1,0 +1,11 @@
+{
+  "name": "NerodEX",
+  "url": "https://a.nerotv.live/zyndex/index.json",
+  "owner": "nerotvlive",
+  "instances": [
+    "https://a.nerotv.live/zyndex/instances/1.12.2/cinematica.json",
+    "https://a.nerotv.live/zyndex/instances/1.16.5/projectz.json",
+    "https://a.nerotv.live/zyndex/instances/1.16.5/projectz-building.json",
+    "https://a.nerotv.live/zyndex/instances/1.18.2/atm7tss.json"
+  ]
+}

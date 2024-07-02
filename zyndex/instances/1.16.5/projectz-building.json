@@ -1,0 +1,33 @@
+{
+  "instance": {
+    "info": {
+      "author": "nerotvlive",
+      "description": "Project'Z mit erweiterten Building-Tools",
+      "name": "Project'Z (Building)",
+      "version": "2024.5-beta.1-building.1"
+    },
+    "meta": {
+      "download": "https://drive.zyneonstudios.com/index.php/s/dXYdd42Sn3pGCwK/download",
+      "forgeType": "NEW",
+      "id": "nerodex-projectz-building",
+      "isHidden": false,
+      "location": "https://a.nerotv.live/zyndex/instances/1.16.5/projectz-building.json",
+      "origin": "https://a.nerotv.live/zyndex/index.json",
+      "tags": [
+        "minecraft-1.16.5",
+        "modloder-forge"
+      ]
+    },
+    "resources": {
+      "background": "https://a.nerotv.live/zyndex/assets/projectz/projectz-building-background.png",
+      "icon": "https://a.nerotv.live/zyndex/assets/projectz/projectz-building-icon.png",
+      "logo": "https://a.nerotv.live/zyndex/assets/projectz/projectz-building-logo.png",
+      "thumbnail": "https://a.nerotv.live/zyndex/assets/projectz/projectz-building-thumbnail.png"
+    },
+    "versions": {
+      "forge": "36.2.41",
+      "minecraft": "1.16.5"
+    }
+  },
+  "scheme": "2024.3"
+}

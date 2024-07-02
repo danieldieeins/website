@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>a.nerotv.live (galgenmann)</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <script src="assets/script.js"></script>
+        <link rel="stylesheet" href="../../assets/boxicons/css/boxicons.min.css">
+    </head>
+    <body>
+        <div class="dock">
+            <form id="worteingabe">
+            <div class="flex" id="start">
+                <h1>Wähle ein Wort:</h1>
+                    <div class="flex">
+                        <div class="input flex">
+                            <label><input type="text" onkeypress="return event.charCode !== 32" id="input" placeholder="Eintippen oder generieren" required></label>
+                            <a onclick="document.getElementById('input').value = getRandomWord();"><i class='bx bx-refresh'></i></a>
+                        </div>
+                    </div>
+                    <label><input type="submit" onclick="event.preventDefault();" class="button" value="Starten"></label>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
