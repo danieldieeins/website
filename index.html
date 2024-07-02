@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>nerotvlive | Nerofy</title>
+    </head>
+    <script>
+        function getBrowserLanguage() {
+            const browserLanguage = navigator.language || navigator.userLanguage;
+            if(browserLanguage.toLowerCase().startsWith("de")) {
+                window.location.href = "de"
+            } else {
+                window.location.href = "en"
+            }
+        }
+        window.onload = getBrowserLanguage;
+    </script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>404 | nerotvlive</title>
+    </head>
+    <script>
+        function getBrowserLanguage() {
+            const browserLanguage = navigator.language || navigator.userLanguage;
+            if(browserLanguage.toLowerCase().startsWith("de")) {
+                window.location.href = "de/404"
+            } else {
+                window.location.href = "en/404"
+            }
+        }
+        window.onload = getBrowserLanguage;
+    </script>
+</html>
