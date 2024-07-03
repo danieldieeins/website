@@ -11,18 +11,18 @@
       "forgeType": "NEW",
       "id": "nerodex-projectz",
       "isHidden": false,
-      "location": "https://a.nerotv.live/zyndex/instances/1.16.5/projectz.json",
-      "origin": "https://a.nerotv.live/zyndex/index.json",
+      "location": "https://nerotvlive.nerofy.de/zyndex/instances/1.16.5/projectz.json",
+      "origin": "https://nerotvlive.nerofy.de/zyndex/index.json",
       "tags": [
         "minecraft-1.16.5",
         "modloder-forge"
       ]
     },
     "resources": {
-      "background": "https://a.nerotv.live/zyndex/assets/projectz/projectz-mirror-background.png",
-      "icon": "https://a.nerotv.live/zyndex/assets/projectz/projectz-mirror-icon.png",
-      "logo": "https://a.nerotv.live/zyndex/assets/projectz/projectz-mirror-logo.png",
-      "thumbnail": "https://a.nerotv.live/zyndex/assets/projectz/projectz-mirror-thumbnail.png"
+      "background": "https://nerotvlive.nerofy.de/zyndex/assets/projectz/projectz-mirror-background.png",
+      "icon": "https://nerotvlive.nerofy.de/zyndex/assets/projectz/projectz-mirror-icon.png",
+      "logo": "https://nerotvlive.nerofy.de/zyndex/assets/projectz/projectz-mirror-logo.png",
+      "thumbnail": "https://nerotvlive.nerofy.de/zyndex/assets/projectz/projectz-mirror-thumbnail.png"
     },
     "versions": {
       "forge": "36.2.41",

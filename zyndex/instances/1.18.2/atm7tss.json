@@ -11,8 +11,8 @@
       "forgeType": "NEW",
       "id": "nerodex-atm7-sky",
       "isHidden": true,
-      "location": "https://a.nerotv.live/zyndex/instances/1.18.2/atm7tss.json",
-      "origin": "https://a.nerotv.live/zyndex/index.json",
+      "location": "https://nerotvlive.nerofy.de/zyndex/instances/1.18.2/atm7tss.json",
+      "origin": "https://nerotvlive.nerofy.de/zyndex/index.json",
       "tags": [
         "minecraft-1.18.2",
         "modloder-forge"

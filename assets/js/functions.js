@@ -42,40 +42,40 @@ function deactivateMenu() {
 function checkURL() {
     const urlParams = new URLSearchParams(location.search);
     if(urlParams.get("r")!=null) {
-        location.href = "https://nerotv.live/"+urlParams.get("r");
+        location.href = "https://nerotvlive.nerofy.de/"+urlParams.get("r");
         return;
     }
     if(urlParams.get("s")!=null) {
         const s = urlParams.get('s');
         if(s === "start"||s === "home") {
-            document.title = "a.nerotv.live (start)"
+            document.title = "nerotvlive.nerofy.de (start)"
             open_("sub/start.html");
         } else if(s === "lawstuff"||s==="rechtliches") {
-            document.title = "a.nerotv.live (impressum & datenschutzerklärung)"
+            document.title = "nerotvlive.nerofy.de (impressum & datenschutzerklärung)"
             open_("sub/lawstuff.html");
         } else if(s==="datenschutzerklärung") {
-            document.title = "a.nerotv.live (impressum & datenschutzerklärung)"
+            document.title = "nerotvlive.nerofy.de (impressum & datenschutzerklärung)"
             open_("sub/lawstuff.html#datenschutzerklärung");
         } else if(s==="impressum") {
-            document.title = "a.nerotv.live (impressum & datenschutzerklärung)"
+            document.title = "nerotvlive.nerofy.de (impressum & datenschutzerklärung)"
             open_("sub/lawstuff.html");
         } else if(s === "discord") {
-            document.title = "a.nerotv.live (discord)"
+            document.title = "nerotvlive.nerofy.de (discord)"
             open_("sub/discord.html");
         } else if(s === "creator") {
-            document.title = "a.nerotv.live (andere creator)"
+            document.title = "nerotvlive.nerofy.de (andere creator)"
             open_("sub/creator.html");
         } else if(s === "zyneon") {
-            document.title = "a.nerotv.live (zyneon)"
+            document.title = "nerotvlive.nerofy.de (zyneon)"
             open_("sub/zyneon.html");
         } else if(s === "zyneonweb") {
-            document.title = "a.nerotv.live (zyneon website)"
+            document.title = "nerotvlive.nerofy.de (zyneon website)"
             open_("https://zyneonstudios.com");
         } else if(s === "zyneonapp") {
-            document.title = "a.nerotv.live (zyneon web app)"
+            document.title = "nerotvlive.nerofy.de (zyneon web app)"
             open_("https://danieldieeins.github.io/Zyneon-Application/");
         } else {
-            document.title = "a.nerotv.live (404)"
+            document.title = "nerotvlive.nerofy.de (404)"
             open_("sub/e404.html");
         }
     }
