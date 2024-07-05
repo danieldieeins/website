@@ -1,173 +1,24 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>nerotvlive.nerofy.de (start)</title>
-
+        <meta charset="UTF-8">
+        <title>Start | nerotvlive</title>
         <link rel="icon" type="image/png" href="../assets/img/logo.png"/>
-        <link rel="stylesheet" href="../assets/boxicons/css/boxicons.min.css">
-        <link rel="stylesheet" href="../assets/css/index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-        <script src="../assets/js/functions.js"></script>
+        <link rel="stylesheet" href="../assets/css/shared.css">
+        <link rel="stylesheet" href="../assets/css/fonts.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <script src="../assets/js/shared.js"></script>
     </head>
     <body>
-        <div id="head-menu">
-            <div class="title">
-                <img alt="" src="../assets/img/logo.png">
+        <div id="menu" class="flex">
+            <div class="title flex">
+                <img alt="nerotvlive logo" src="../assets/img/logo.png">
                 <h1>nerotvlive</h1>
-                <i id="toggle" class='bx bx-menu' onclick="document.getElementById('sub-menu').classList.toggle('active')"></i>
             </div>
-            <div id="sub-menu">
-                <ul>
-                    <li>
-                        <a onclick="link('?s=home'); document.title = 'nerotvlive.nerofy.de (start)'" target="_blank"><div class="menu-item">
-                            <i class='bx bxs-home'></i>
-                            <span>Start</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link('https://nerotvlive.nerofy.de');" target="_blank"><div class="menu-item">
-                            <i class='bx bxs-flag-alt'></i>
-                            <span>English site</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <h3>Content:</h3>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://twitch.tv/nerotvlive');" target="_blank"><div class="menu-item" id="twitch">
-                            <i class='bx bxl-twitch'></i>
-                            <span>Twitch Kanal</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://youtube.com/@nerotvlive');" target="_blank"><div class="menu-item" id="youtube">
-                            <i class='bx bxl-youtube' ></i>
-                            <span>YouTube Kanal</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://youtube.com/@danieldieeins');" target="_blank"><div class="menu-item" id="youtube2">
-                            <i class='bx bxl-youtube' ></i>
-                            <span>Let's play Kanal</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://youtube.com/@nerotvoffline');" target="_blank"><div class="menu-item" id="youtube3">
-                            <i class='bx bxl-youtube' ></i>
-                            <span>Streamaufzeichnungen</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <h3>Social:</h3>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://bsky.app/profile/nerotvlive.bsky.social');" target="_blank"><div class="menu-item" id="bluesky">
-                            <i class='bx bxs-bookmark-alt' ></i>
-                            <span>Bluesky</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link('?s=discord'); document.title = 'nerotvlive.nerofy.de (discord)'" target="_blank"><div class="menu-item" id="discord">
-                            <i class='bx bxl-discord-alt' ></i>
-                            <span>Discord</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://instagram.com/nerotvlive');" target="_blank"><div class="menu-item" id="instagram">
-                            <i class='bx bxl-instagram-alt' ></i>
-                            <span>Instagram</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://www.reddit.com/user/nerotvlive');" target="_blank"><div class="menu-item" id="reddit">
-                            <i class='bx bxl-reddit' ></i>
-                            <span>Reddit</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://threads.net/nerotvlive');" target="_blank"><div class="menu-item" id="threads">
-                            <i class='bx bxs-conversation'></i>
-                            <span>Threads</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://x.com/nerotvlive');" target="_blank"><div class="menu-item" id="x">
-                            <i class='bx bxl-twitter'></i>
-                            <span>X (Twitter)</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <h3>Anderes:</h3>
-                    </li>
-                    <li>
-                        <a onclick="link('?s=creator');" target="_blank"><div class="menu-item" id="creator">
-                            <i class='bx bxs-shocked' ></i>
-                            <span>Andere Creator</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://github.com/danieldieeins');" target="_blank"><div class="menu-item">
-                            <i class='bx bxl-github'></i>
-                            <span>GitHub</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://patreon.com/nerotvlive');" target="_blank"><div class="menu-item" id="patreon">
-                            <i class='bx bxl-patreon' ></i>
-                            <span>Patreon</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://open.spotify.com/user/kjs8bzr29uxv842yjfn8xka5p');" target="_blank"><div class="menu-item" id="spotify">
-                            <i class='bx bxl-spotify' ></i>
-                            <span>Spotify</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link('?s=zyneon');" target="_blank"><div class="menu-item" id="zyneon">
-                            <i class='bx bx-cube' ></i>
-                            <span>Zyneon Studios</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://www.tipeeestream.com/nerotvlive/donation/');" target="_blank"><div class="menu-item" id="tipeee">
-                            <i class='bx bxs-donate-heart' ></i>
-                            <span>Spendenlink</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <h3>Sonstiges:</h3>
-                    </li>
-                    <li>
-                        <a onclick="link_('https://github.com/danieldieeins/danieldieeins');" target="_blank"><div class="menu-item">
-                            <i class='bx bx-code-alt'></i>
-                            <span>Website Source</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link('?s=impressum');" target="_blank"><div class="menu-item">
-                            <i class='bx bxs-contact' ></i>
-                            <span>Impressum</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a onclick="link('?s=rechtliches');" target="_blank"><div class="menu-item">
-                            <i class='bx bxs-hand'></i>
-                            <span>Datenschutzerklärung</span>
-                        </div></a>
-                    </li>
-                    <li>
-                        <h3>Hosted on GitHub pages <3</h3>
-                    </li>
-                </ul>
+            <i class="bx bx-menu toggle" onclick="document.getElementById('menu').querySelector('.links').classList.toggle('active');"></i>
+            <div class="links flex">
+                <a href="../en">English page</a>
             </div>
         </div>
-        <iframe src="sub/start.html" id="content">
-
-        </iframe>
     </body>
 </html>
