@@ -1,6 +1,8 @@
 :root {
     --background: #101010;
 
+    --accent: #fb4747;
+
     --menu: #00000085;
     --menu-hover: #000000;
 
@@ -129,7 +131,7 @@ body {
             box-shadow: none;
             flex-direction: row-reverse;
             height: 2rem;
-            top: 0;
+            top: 0.075rem;
             right: 0;
             max-width: calc(100% - 18rem);
             min-width: unset;
@@ -151,5 +153,9 @@ body {
 
     .flex {
         display: flex !important;
+    }
+
+    .accent {
+        color: var(--accent) !important;
     }
 }

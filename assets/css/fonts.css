@@ -87,3 +87,7 @@ body {
 .semibold-italic {
     font-family: OpenSans-SemiboldItalic, sans-serif;
 }
+
+.underlined {
+    text-decoration: underline;
+}

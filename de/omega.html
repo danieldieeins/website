@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Oh oh... Langsam wirst du aber echt seeeeeehr alt du...</title>
+        <link rel="icon" type="image/png" href="../assets/img/logo.png"/>
+        <link rel="stylesheet" href="../assets/css/shared.css">
+        <link rel="stylesheet" href="../assets/css/birthday.css">
+        <link rel="stylesheet" href="../assets/css/fonts.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="../assets/js/shared.js"></script>
+        <script src="../assets/js/countdown.js"></script>
+    </head>
+    <body>
+        <div id="menu" class="flex">
+            <div class="title flex">
+                <img alt="nerotvlive logo" src="../assets/img/logo.png">
+                <h1>nerotvlive</h1>
+            </div>
+            <i class="bx bx-menu toggle" onclick="document.getElementById('menu').querySelector('.links').classList.toggle('active');"></i>
+            <div class="links flex">
+                <a href="../de">Zurück</a>
+            </div>
+        </div>
+        <div id="b-countdown">
+            <p>Alt in:</p>
+            <div><span id="b-days"></span></div>
+            <div><span id="b-hours"></span></div>
+            <div><span id="b-minutes"></span></div>
+            <div><span id="b-seconds"></span></div>
+        </div>
+    </body>
+    <script>
+        function runCountdown() {
+            updateCountdown("2025-04-06T00:00:00","b",clearCountdown);
+        }
+        function clearCountdown() {
+            clearInterval(countdownInterval);
+        }
+        let countdownInterval;
+        document.addEventListener("DOMContentLoaded", (event) => {
+            countdownInterval = setInterval(runCountdown, 1000);
+        });
+    </script>
+</html>
