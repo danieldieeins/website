@@ -1,7 +1,8 @@
 :root {
     --background: #101010;
 
-    --accent: #fb4747;
+    --accent: #8660e8;
+    --accent2: #fb4747;
 
     --menu: #00000085;
     --menu-hover: #000000;
@@ -157,5 +158,9 @@ body {
 
     .accent {
         color: var(--accent) !important;
+    }
+
+    .accent2 {
+        color: var(--accent2) !important;
     }
 }
