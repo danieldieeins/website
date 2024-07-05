@@ -50,7 +50,7 @@ body {
                 top: 0;
                 font-size: 2rem;
                 padding: 0.5rem;
-                margin: 0 0 0 3rem;
+                margin: 0.25rem 0 0 3rem;
                 font-family: OpenSans-Bold, sans-serif;
             }
         }
@@ -115,7 +115,7 @@ body {
             }
 
             h1 {
-                margin: 0.275rem 0.275rem 0.275rem 2.5rem;
+                margin: 0.4rem 0.275rem 0.275rem 2.5rem;
             }
         }
 
