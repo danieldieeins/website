@@ -14,8 +14,7 @@ function updateCountdown(countdownGoal,id,endFunction) {
         const days_ = " Tag" + (days !== 1 || "en"),
             hours_ = " Stunde" + (hours !== 1 || "n"),
             minutes_ = " Minute" + (minutes !== 1 || "n"),
-            seconds_ = " Sekunde" + (seconds !== 1 || "n"),
-            seconds_ = ` Sekunde${seconds !== 1 || "n"}`;
+            seconds_ = " Sekunde" + (seconds !== 1 || "n");
 
         document.getElementById(id + "-days").innerText = days+days_;
         document.getElementById(id + "-hours").innerText = hours+hours_;
