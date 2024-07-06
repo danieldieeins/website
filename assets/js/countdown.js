@@ -11,10 +11,10 @@ function updateCountdown(countdownGoal,id,endFunction) {
             minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
             seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        const days_ = " Tag" + (days !== 1 || "en"),
-            hours_ = " Stunde" + (hours !== 1 || "n"),
-            minutes_ = " Minute" + (minutes !== 1 || "n"),
-            seconds_ = " Sekunde" + (seconds !== 1 || "n");
+        const days_ = " Tag" + (days !== 1 ? "en" : ""),
+            hours_ = " Stunde" + (hours !== 1 ? "n" : ""),
+            minutes_ = " Minute" + (minutes !== 1 ? "n" : ""),
+            seconds_ = " Sekunde" + (seconds !== 1 ? "n" : "");
 
         document.getElementById(id + "-days").innerText = days+days_;
         document.getElementById(id + "-hours").innerText = hours+hours_;
