@@ -6,30 +6,16 @@ function updateCountdown(countdownGoal,id,endFunction) {
         const now = dateNow.getTime();
         const distance = countdownDate.getTime() - now;
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24)),
+            hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+            minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+            seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        let days_ = " Tagen";
-        if(days === 1) {
-            days_ = " Tag";
-        }
-
-        let hours_ = " Stunden";
-        if(hours === 1) {
-            hours_ = " Stunde";
-        }
-
-        let minutes_ = " Minuten";
-        if(minutes === 1) {
-            minutes_ = " Minute";
-        }
-
-        let seconds_ = " Sekunden";
-        if(seconds === 1) {
-            seconds_ = " Sekunde";
-        }
+        const days_ = " Tag" + (days !== 1 || "en"),
+            hours_ = " Stunde" + (hours !== 1 || "n"),
+            minutes_ = " Minute" + (minutes !== 1 || "n"),
+            seconds_ = " Sekunde" + (seconds !== 1 || "n"),
+            seconds_ = ` Sekunde${seconds !== 1 || "n"}`;
 
         document.getElementById(id + "-days").innerText = days+days_;
         document.getElementById(id + "-hours").innerText = hours+hours_;
