@@ -1,0 +1,8 @@
+<script>
+    const browserLanguage = navigator.language || navigator.userLanguage;
+    if(browserLanguage.toLowerCase().startsWith("de")) {
+        window.location.href = "de/smile"
+    } else {
+        window.location.href = "en/404"
+    }
+</script>
