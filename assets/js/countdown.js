@@ -11,7 +11,7 @@ function updateCountdown(countdownGoal,id,endFunction) {
     document.getElementById(id + "-minutes").innerText = (minutes > 0 ? minutes+" Minute" + (minutes !== 1 ? "n" : "") : "");
     document.getElementById(id + "-seconds").innerText = (seconds > 0 ? seconds+" Sekunde" + (seconds !== 1 ? "n" : "") : "");
 
-    if (distance <= 0) {
+    if (distance < 1) {
         endFunction();
     }
 }
