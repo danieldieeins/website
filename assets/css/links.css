@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+
+    ul {
+        position: absolute;
+
+        li {
+            backdrop-filter: blur(16px);
+            font-family: OpenSans-Semibold, sans-serif;
+            user-select: none;
+            list-style: none;
+            background: var(--menu);
+            margin: 1rem 0 1rem 0;
+            padding: 1rem 4rem;
+            border: 2px solid var(--border);
+            text-align: center;
+
+            a {
+                color: var(--foreground);
+                text-decoration: none;
+            }
+        }
+
+        li:hover {
+            color: var(--foreground2);
+            cursor: pointer;
+            border: 2px solid var(--border-hover);
+            background: var(--menu-hover);
+        }
+
+        li.heading {
+            border: none;
+            background: none;
+            cursor: unset;
+            padding: 0;
+            margin: 0;
+        }
+
+        li.heading:hover {
+            color: unset;
+        }
+    }
+}
