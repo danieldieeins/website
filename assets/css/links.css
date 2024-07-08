@@ -15,7 +15,6 @@ body {
             background: var(--menu);
             margin: 1rem 0 1rem 0;
             padding: 1rem 4rem;
-            border: 2px solid var(--border);
             text-align: center;
 
             a {
@@ -27,7 +26,6 @@ body {
         li:hover {
             color: var(--foreground2);
             cursor: pointer;
-            border: 2px solid var(--border-hover);
             background: var(--menu-hover);
         }
 
