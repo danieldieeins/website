@@ -3,6 +3,8 @@ body {
     justify-content: center;
 
     ul {
+        padding: 0;
+        margin: 0;
         position: absolute;
 
         li {
