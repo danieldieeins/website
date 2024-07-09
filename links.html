@@ -1,0 +1,8 @@
+<script>
+    const browserLanguage = navigator.language || navigator.userLanguage;
+    if(browserLanguage.toLowerCase().startsWith("de")) {
+        window.location.href = "de/links"
+    } else {
+        window.location.href = "en/links"
+    }
+</script>
