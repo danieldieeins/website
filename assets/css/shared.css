@@ -17,6 +17,7 @@
     --foreground3: #ffffff;
 
     --viewport-height: 0;
+    --viewport-width: 0;
 }
 
 body {

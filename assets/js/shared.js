@@ -15,6 +15,7 @@ function initSize() {
     initMenu();
     const root = document.documentElement;
     root.style.setProperty("--viewport-height",window.innerHeight + "px");
+    root.style.setProperty("--viewport-width",window.innerWidth + "px");
 }
 
 addEventListener("resize", (event) => {

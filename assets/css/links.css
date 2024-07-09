@@ -1,44 +1,21 @@
 body {
     display: flex;
     justify-content: center;
+    text-align: center;
 
-    ul {
-        padding: 0;
-        margin: 0;
-        position: absolute;
+    .links {
+        width: 100%;
+        max-width: 40rem;
+        user-select: none;
 
-        li {
-            backdrop-filter: blur(16px);
-            font-family: OpenSans-Semibold, sans-serif;
-            user-select: none;
-            list-style: none;
+        p {
+            padding: 1rem;
             background: var(--menu);
-            margin: 1rem 0 1rem 0;
-            padding: 1rem 4rem;
-            text-align: center;
-
-            a {
-                color: var(--foreground);
-                text-decoration: none;
-            }
         }
 
-        li:hover {
-            color: var(--foreground2);
+        p:hover {
             cursor: pointer;
             background: var(--menu-hover);
-        }
-
-        li.heading {
-            border: none;
-            background: none;
-            cursor: unset;
-            padding: 0;
-            margin: 0;
-        }
-
-        li.heading:hover {
-            color: unset;
         }
     }
 }
