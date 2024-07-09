@@ -5,16 +5,39 @@ body {
 
     .links {
         width: 100%;
-        max-width: 40rem;
+        max-width: 35rem;
         user-select: none;
 
+        a {
+            color: unset;
+            text-decoration: none;
+        }
+
         p {
+            box-shadow: 0 0 0.4rem var(--shadow);
+            position: relative;
             padding: 1rem;
+            margin: 1rem;
+            color: var(--foreground);
             background: var(--menu);
+            font-family: OpenSans-Semibold, sans-serif;
+
+            i, span {
+                position: absolute;
+                font-size: 1.5rem;
+                left: 1rem;
+                top: 0.9rem;
+            }
+
+            span {
+                top: 0.5rem;
+            }
         }
 
         p:hover {
+            box-shadow: 0 0 0.8rem var(--shadow);
             cursor: pointer;
+            color: var(--foreground2);
             background: var(--menu-hover);
         }
     }
