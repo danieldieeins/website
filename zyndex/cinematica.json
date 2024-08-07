@@ -11,8 +11,8 @@
       "forgeType": "NEW",
       "isHidden": false,
       "id": "nerodex-cinematica",
-      "location": "https://a.nerotv.live/zyndex/instances/1.12.2/cinematica.json",
-      "origin": "https://a.nerotv.live/zyndex/index.json",
+      "location": "https://danieldieeins.github.io/zyndex/cinematica.json",
+      "origin": "https://danieldieeins.github.io/zyndex/index.json",
       "tags": [
         "minecraft-1.12.2",
         "modloder-forge",

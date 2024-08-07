@@ -11,8 +11,8 @@
       "forgeType": "NEW",
       "isHidden": true,
       "id": "nerodex-flippidi",
-      "location": "https://nerotvlive.nerofy.de/zyndex/flippidi.json",
-      "origin": "https://nerotvlive.nerofy.de/zyndex/index.json",
+      "location": "https://danieldieeins.github.io/zyndex/flippidi.json",
+      "origin": "https://danieldieeins.github.io/zyndex/index.json",
       "tags": [
         "minecraft-1.12.2",
         "modloder-forge",
