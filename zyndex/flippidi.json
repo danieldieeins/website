@@ -1,0 +1,31 @@
+{
+  "instance": {
+    "info": {
+      "author": "nerotvlive",
+      "description": "Uhmmm... nothing.",
+      "name": "Not so baker",
+      "version": "2024.5"
+    },
+    "meta": {
+      "download": "https://www.dropbox.com/scl/fi/3r2uwusxnxz14o7icri0q/cinematica.zip?rlkey=i6ybcttyyijsaz360wjrlnnt5&dl=1",
+      "forgeType": "NEW",
+      "isHidden": true,
+      "id": "nerodex-flippidi",
+      "location": "https://nerotvlive.nerofy.de/zyndex/flippidi.json",
+      "origin": "https://nerotvlive.nerofy.de/zyndex/index.json",
+      "tags": [
+        "minecraft-1.12.2",
+        "modloder-forge",
+        "forgetype-new"
+      ]
+    },
+    "resources": {
+      "thumbnail": "https://i.ibb.co/R0Mrpx5/cinematica.png"
+    },
+    "versions": {
+      "forge": "14.23.5.2860",
+      "minecraft": "1.12.2"
+    }
+  },
+  "scheme": "2024.3"
+}
