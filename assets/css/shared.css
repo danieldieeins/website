@@ -1,6 +1,6 @@
 :root {
-    --background: #201a1a;
-    --background2: #0e0c0c;
+    --background: #1a1a1a;
+    --background2: #121212;
     --foreground: #d6d6d6;
     --foreground2: white;
     --accent: #ec3232;
@@ -9,7 +9,7 @@
     --accent3: #6cff96;
     --accent4: #ff00c1;
 
-    --menu: #171414;
+    --menu: #121212;
 }
 
 html {
@@ -87,7 +87,6 @@ body {
     opacity: 0.75;
 
     a:hover {
-        opacity: 0.99;
         color: var(--accent);
         text-decoration: none;
     }
