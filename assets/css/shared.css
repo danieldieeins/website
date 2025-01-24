@@ -76,8 +76,19 @@ body {
     padding-bottom: 2rem;
     text-decoration: none;
     opacity: 0.5;
+
+    a {
+        color: var(--foreground2);
+        text-decoration: none;
+    }
 }
 
 .footer:hover {
-    opacity: 1;
+    opacity: 0.75;
+
+    a:hover {
+        opacity: 0.99;
+        color: var(--accent);
+        text-decoration: none;
+    }
 }
