@@ -1,7 +1,7 @@
 body {
     display: flex;
-    justify-content: center;
     text-align: center;
+    align-items: center;
 
     .links {
         width: 100%;
@@ -14,13 +14,14 @@ body {
         }
 
         p {
-            box-shadow: 0 0 0.4rem var(--shadow);
+            box-shadow: 0 0 0.4rem var(--background2);
             position: relative;
             padding: 1rem;
             margin: 1rem;
             color: var(--foreground);
             background: var(--menu);
             font-family: OpenSans-Semibold, sans-serif;
+            border-radius: 2rem 1rem;
 
             i, span {
                 position: absolute;
@@ -35,10 +36,10 @@ body {
         }
 
         p:hover {
-            box-shadow: 0 0 0.8rem var(--shadow);
+            box-shadow: 0 0 0.8rem var(--background2);
             cursor: pointer;
             color: var(--foreground2);
-            background: var(--menu-hover);
+            background: var(--background2);
         }
     }
 }

@@ -1,8 +1,13 @@
-<script>
-    const browserLanguage = navigator.language || navigator.userLanguage;
-    if(browserLanguage.toLowerCase().startsWith("de")) {
-        window.location.href = "de"
-    } else {
-        window.location.href = "en"
-    }
-</script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Redirecting... | nerotvlive</title>
+    </head>
+    <body bgcolor="black" text="white">
+    <a style="color: white; text-decoration: none" href="404.html">If you are not automatically redirected, click here.</a>
+    <script>
+        location.href = "404.html";
+    </script>
+    </body>
+</html>

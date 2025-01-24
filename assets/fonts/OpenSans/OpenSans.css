@@ -1,6 +1,6 @@
 @font-face {
     font-family: OpenSans-Bold;
-    src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+    src: url("OpenSans-Bold.ttf");
 }
 
 .bold {
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: OpenSans-BoldItalic;
-    src: url("../fonts/OpenSans/OpenSans-BoldItalic.ttf");
+    src: url("OpenSans-BoldItalic.ttf");
 }
 
 .bold-italic {
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: OpenSans-ExtraBold;
-    src: url("../fonts/OpenSans/OpenSans-ExtraBold.ttf");
+    src: url("OpenSans-ExtraBold.ttf");
 }
 
 .extra-bold {
@@ -27,7 +27,7 @@
 
 @font-face {
     font-family: OpenSans-ExtraBoldItalic;
-    src: url("../fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf");
+    src: url("OpenSans-ExtraBoldItalic.ttf");
 }
 
 .extra-bold-italic {
@@ -36,7 +36,7 @@
 
 @font-face {
     font-family: OpenSans-Italic;
-    src: url("../fonts/OpenSans/OpenSans-Italic.ttf");
+    src: url("OpenSans-Italic.ttf");
 }
 
 .italic {
@@ -45,7 +45,7 @@
 
 @font-face {
     font-family: OpenSans-Light;
-    src: url("../fonts/OpenSans/OpenSans-Light.ttf");
+    src: url("OpenSans-Light.ttf");
 }
 
 .light {
@@ -54,7 +54,7 @@
 
 @font-face {
     font-family: OpenSans-LightItalic;
-    src: url("../fonts/OpenSans/OpenSans-LightItalic.ttf");
+    src: url("OpenSans-LightItalic.ttf");
 }
 
 .light-italic {
@@ -63,7 +63,7 @@
 
 @font-face {
     font-family: OpenSans-Regular;
-    src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+    src: url("OpenSans-Regular.ttf");
 }
 
 body {
@@ -72,7 +72,7 @@ body {
 
 @font-face {
     font-family: OpenSans-Semibold;
-    src: url("../fonts/OpenSans/OpenSans-Semibold.ttf");
+    src: url("OpenSans-Semibold.ttf");
 }
 
 .semibold {
@@ -81,13 +81,9 @@ body {
 
 @font-face {
     font-family: OpenSans-SemiboldItalic;
-    src: url("../fonts/OpenSans/OpenSans-SemiboldItalic.ttf");
+    src: url("OpenSans-SemiboldItalic.ttf");
 }
 
 .semibold-italic {
     font-family: OpenSans-SemiboldItalic, sans-serif;
-}
-
-.underlined {
-    text-decoration: underline;
 }
