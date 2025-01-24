@@ -11,6 +11,7 @@
             function getBrowserLanguage() {
                 if(location.href.toLowerCase().includes("nerotv.live")) {
                     location.href = location.href.replaceAll("nerotv.live","board.nerotvlive.nrfy.net");
+                    return;
                 }
                 const browserLanguage = navigator.language || navigator.userLanguage;
                 if(browserLanguage.toLowerCase().startsWith("de")) {
