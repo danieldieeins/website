@@ -93,6 +93,7 @@ body {
 }
 
 .settings {
+    opacity: 0.5;
     width: 100%;
     font-size: 1.2rem;
     position: absolute;
@@ -114,4 +115,8 @@ body {
             color: white;
         }
     }
+}
+
+.settings:hover {
+    opacity: 0.75;
 }
