@@ -73,7 +73,7 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     text-decoration: none;
     opacity: 0.5;
 
@@ -89,5 +89,29 @@ body {
     a:hover {
         color: var(--accent);
         text-decoration: none;
+    }
+}
+
+.settings {
+    width: 100%;
+    font-size: 1.2rem;
+    position: absolute;
+    padding-bottom: 1rem;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    select {
+        background: #00000050;
+        border-radius: 0.5rem;
+        margin-left: 0.25rem;
+        border: none;
+        padding: 0.25rem;
+
+        option {
+            background: black;
+            color: white;
+        }
     }
 }
