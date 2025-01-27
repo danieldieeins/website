@@ -9,7 +9,7 @@
     --accent3: #6cff96;
     --accent4: #ff00c1;
 
-    --menu: #121212;
+    --menu: #12121299;
 }
 
 html {
@@ -37,6 +37,8 @@ body {
     font-family: OpenSans-Regular, sans-serif;
 
     #menu {
+        user-select: none;
+        z-index: 1000;
         align-self: center;
         position: fixed;
         height: 2.75rem;
@@ -51,6 +53,71 @@ body {
             height: 100%;
             margin-left: 2rem;
         }
+
+        h3 {
+            position: absolute;
+            left: 7rem;
+            top: 0.5rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    .header {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: transformRadial 120s linear infinite;
+        z-index: 0;
+    }
+
+    .content {
+        background: black;
+
+        .footer {
+            color: var(--foreground);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 0;
+
+            opacity: 0.5;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: cornflowerblue;
+                animation: transformRadial 10s linear infinite;
+            }
+        }
+
+        .footer:hover {
+            opacity: 1;
+        }
+    }
+
+
+    .content-header {
+        position: absolute;
+        width: 100%;
+        top: calc(100% + 5rem);
+    }
+}
+
+@keyframes transformRadial {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
     }
 }
 
@@ -66,57 +133,4 @@ body {
     100% {
         border-radius: 4rem 1rem 4rem 1rem;
     }
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 3rem;
-    text-decoration: none;
-    opacity: 0.5;
-
-    a {
-        color: var(--foreground2);
-        text-decoration: none;
-    }
-}
-
-.footer:hover {
-    opacity: 0.75;
-
-    a:hover {
-        color: var(--accent);
-        text-decoration: none;
-    }
-}
-
-.settings {
-    opacity: 0.5;
-    width: 100%;
-    font-size: 1.2rem;
-    position: absolute;
-    padding-bottom: 1rem;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    select {
-        background: #00000050;
-        border-radius: 0.5rem;
-        margin-left: 0.25rem;
-        border: none;
-        padding: 0.25rem;
-
-        option {
-            background: black;
-            color: white;
-        }
-    }
-}
-
-.settings:hover {
-    opacity: 0.75;
 }

@@ -1,0 +1,85 @@
+body {
+    background: black;
+
+    .header-overlay {
+        position: absolute;
+        width: 100%;
+        height: calc(100% + 5rem);
+        top: 0;
+        backdrop-filter: blur(64px);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            user-select: none;
+            font-size: 5rem;
+            color: white;
+            padding-bottom: 10rem;
+            animation: transformTitle 5s linear;
+            text-shadow: 0 0 8px white;
+        }
+
+        .buttons {
+            user-select: none;
+            position: absolute;
+            animation: transformButtons 3s linear;
+
+            .button {
+                user-select: none;
+                background: var(--background2);
+                padding: 1rem 2rem;
+                margin: 0.5rem;
+                border-radius: 1rem;
+                border: 1px solid var(--background);
+                text-decoration: none;
+            }
+
+            .button:hover {
+                user-select: none;
+                cursor: pointer;
+                border: 1px solid #ffffff90;
+                background: var(--background);
+            }
+        }
+    }
+
+    .header {
+        background: radial-gradient(black,black,red,black,black,black);
+    }
+}
+
+@keyframes transformTitle {
+    0% {
+        color: black;
+        text-shadow: 0 0 8px black;
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        color: #ffd1d1;
+        filter: hue-rotate(360deg);
+    }
+
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 8px white;
+        padding-bottom: 10rem;
+        filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes transformButtons {
+    0% {
+        opacity: 0;
+    }
+
+    99 % {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
