@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="assets/css/shared.css">
     </head>
     <body bgcolor="black" text="white">
-        <a style="color: white; text-decoration: none" href="en/index.html">If you are not automatically redirected, click here.</a>
+        <a style="color: white; text-decoration: none" href="/en/index.html">If you are not automatically redirected, click here.</a>
         <script>
             function getBrowserLanguage() {
                 if(location.href.toLowerCase().includes("nerotv.live")) {
@@ -15,11 +15,11 @@
                 }
                 const browserLanguage = navigator.language || navigator.userLanguage;
                 if(browserLanguage.toLowerCase().startsWith("de")) {
-                    window.location.href = "de";
-                    document.body.querySelector("a").href = "de/index.html";
+                    window.location.href = "/de";
+                    document.body.querySelector("a").href = "/de/index.html";
                     document.body.querySelector("a").innerText = "Falls du nicht automatisch weitergeleitet wirst, klicke hier.";
                 } else {
-                    window.location.href = "en";
+                    window.location.href = "/en";
                 }
             }
             window.onload = getBrowserLanguage;
