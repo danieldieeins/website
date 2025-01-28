@@ -54,6 +54,10 @@ body {
             margin-left: 2rem;
         }
 
+        img:hover {
+            animation: transformRadial 32s linear infinite;
+        }
+
         h3 {
             position: absolute;
             left: 7rem;
