@@ -16,9 +16,17 @@ body {
             user-select: none;
             font-size: 5rem;
             color: white;
-            padding-bottom: 10rem;
+            margin-bottom: 10rem;
             animation: transformTitle 5s linear;
             text-shadow: 0 0 8px white;
+        }
+
+        h1:hover {
+            font-size: 5.5rem;
+            margin-bottom: 11rem;
+            color: #ffc0c0;
+            text-shadow: 0 0 8px #ffc0c0;
+            animation: transformRadial 10s linear;
         }
 
         .buttons {
@@ -39,8 +47,10 @@ body {
             .button:hover {
                 user-select: none;
                 cursor: pointer;
-                border: 1px solid #ffffff90;
+                border: 1px solid #ffc0c0;
+                color: #ffc0c0;
                 background: var(--background);
+                animation: transformRadial 10s linear infinite;
             }
         }
     }
@@ -52,21 +62,20 @@ body {
 
 @keyframes transformTitle {
     0% {
-        color: black;
-        text-shadow: 0 0 8px black;
-        filter: hue-rotate(0deg);
+        color: black !important;
+        text-shadow: 0 0 8px black !important;
+        filter: hue-rotate(0deg) !important;
     }
 
     50% {
-        color: #ffd1d1;
-        filter: hue-rotate(360deg);
+        color: #ffd1d1 !important;
+        filter: hue-rotate(360deg) !important;
     }
 
     100% {
-        color: #ffffff;
-        text-shadow: 0 0 8px white;
-        padding-bottom: 10rem;
-        filter: hue-rotate(0deg);
+        color: #ffffff !important;
+        text-shadow: 0 0 8px white !important;
+        filter: hue-rotate(0deg) !important;
     }
 }
 

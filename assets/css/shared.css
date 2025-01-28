@@ -89,7 +89,7 @@ body {
             }
 
             a:hover {
-                color: cornflowerblue;
+                color: #ffc0c0;
                 animation: transformRadial 10s linear infinite;
             }
         }
