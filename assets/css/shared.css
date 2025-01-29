@@ -64,6 +64,30 @@ body {
             top: 0.5rem;
             font-size: 2.5rem;
         }
+
+        .links {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.675rem;
+            height: 100%;
+
+            a {
+                position: relative;
+                padding: 0.75rem 1.5rem;
+                background: var(--background);
+                text-decoration: none;
+                border-radius: 2rem 1rem;
+                border: 1px solid #232323;
+                transition: all 0.25s linear;
+            }
+
+            a:hover {
+                color: black;
+                background: #ffc0c0;
+                border: 1px solid #ffa1a1;
+                animation: transformRadial 10s linear infinite;
+            }
+        }
     }
 
     .header {
