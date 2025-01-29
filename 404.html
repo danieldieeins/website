@@ -2,27 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Resolving... | nerotvlive</title>
+        <title>Redirecting... | nerotvlive</title>
         <link rel="stylesheet" href="assets/css/shared.css">
     </head>
     <body bgcolor="black" text="white">
-        <a style="color: white; text-decoration: none" href="/en/index.html">If you are not automatically redirected, click here.</a>
+        <a style="color: white; text-decoration: none" href="resolve.html">If you are not automatically redirected, click here.</a>
         <script>
-            function getBrowserLanguage() {
-                if(location.href.toLowerCase().includes("nerotv.live")) {
-                    location.href = location.href.replaceAll("nerotv.live","board.nerotvlive.nrfy.net");
-                    return;
-                }
-                const browserLanguage = navigator.language || navigator.userLanguage;
-                if(browserLanguage.toLowerCase().startsWith("de")) {
-                    window.location.href = "/de";
-                    document.body.querySelector("a").href = "/de/index.html";
-                    document.body.querySelector("a").innerText = "Falls du nicht automatisch weitergeleitet wirst, klicke hier.";
-                } else {
-                    window.location.href = "/en";
-                }
+            if(location.href.toLowerCase().includes("nerotv.live")) {
+                location.href = location.href.replaceAll("nerotv.live","board.nerotvlive.nrfy.net");
+            } else {
+                location.href = "resolve.html";
             }
-            window.onload = getBrowserLanguage;
         </script>
     </body>
 </html>
